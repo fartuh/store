@@ -30,6 +30,10 @@ $urls_arr = require('routes.php');
 
 if($settings['db']['avilable'] == true){
     DB::connect($settings['db']);
+    $models = glob(APP . 'models/*.php');
+    foreach($models as $model){
+        include $model;
+    }
 }
 
 $mcore = new Main_core($settings, $urls_arr);

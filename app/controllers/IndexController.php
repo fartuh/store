@@ -2,15 +2,15 @@
 
 namespace app\controllers;
 
-use \DB\DB;
-
+use models\User;
 
 class IndexController extends Controller
 {
 
     public function index(){
-        
-        $this->view('welcome');
+        $user = new User();
+        $data = $user->getUserById(1);
+        $this->view('welcome', ['name' => $data['name']]);
     }
 
     public function testdb(){
