@@ -11,4 +11,5 @@ class GodController
 
         include_once(APP . 'views/' . $__name . '.php');
     }
+
 }

@@ -2,7 +2,7 @@
 
 namespace core;
 
-class Main_core
+class Main_core extends GodController
 {
 
     protected
@@ -31,7 +31,8 @@ class Main_core
                 return;
             }
         }
-        echo 'not found';
+        $this->view('404');
+        
     }
 
 }

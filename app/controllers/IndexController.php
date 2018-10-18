@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use models\User;
+use app\models\User;
 
 class IndexController extends Controller
 {
@@ -13,12 +13,4 @@ class IndexController extends Controller
         $this->view('welcome', ['name' => $data['name']]);
     }
 
-    public function testdb(){
-        $db = DB::getDB();
-        $stmt = $db->prepare("SELECT * FROM users");
-        $stmt->execute();
-        foreach($stmt as $d){
-            echo $d;
-        }
-    }
 }
