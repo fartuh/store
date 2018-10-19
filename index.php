@@ -13,6 +13,10 @@ if(isset($_GET['url']) && trim($_GET['url']) != '')
 else
     define('URL', 'index');
 
+//composer autoload
+
+require_once(ROOT . 'vendor/autoload.php');
+
 //Подключение классов
 
 spl_autoload_register(function ($class) {

@@ -8,9 +8,9 @@ class IndexController extends Controller
 {
 
     public function index(){
-        $user = new User();
-        $data = $user->getUserById(1);
-        $this->view('welcome', ['name' => $data['name']]);
+        $user = new User;
+        $data = $user->getAllWhere('id = ?', [2])->toArray();
+        $this->view('welcome', ['name' => $data[0]['name']]);
     }
 
 }

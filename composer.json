@@ -1,0 +1,15 @@
+{
+    "name": "nikita/store",
+    "description": "My store framework",
+    "type": "project",
+    "license": "Artistic License 2.0",
+    "authors": [
+        {
+            "name": "Winzmcman",
+            "email": "nik.pawlo2011@yandex.ua"
+        }
+    ],
+    "require": {
+        "sunra/php-simple-html-dom-parser": "1.5.2"
+    }
+}
