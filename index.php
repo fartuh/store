@@ -41,6 +41,8 @@ spl_autoload_register(function ($class) {
 //require('core/Main_core.php');
 //require(APP . 'controllers/Controller.php');
 
+
+
 use \core\Main_core;
 use \db\DB;
 
